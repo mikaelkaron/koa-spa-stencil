@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  client:
+    volumes:
+      - ./:/home/node/
+    working_dir: /home/node
+    command: ['npm', 'run', 'start']
+    environment:
+      NODE_ENV: development

@@ -1,0 +1,24 @@
+{
+  "name": "koa-spa-stencil",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Template for Koa+StencilJS SPA",
+  "scripts": {
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve --docs",
+    "start:docker": "npm run start --",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "start:server": "node server.js"
+  },
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-spa-es6template": "^1.0.0",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "@stencil/core": "^1.1.9",
+    "@stencil/sass": "^1.0.1"
+  },
+  "license": "MIT"
+}

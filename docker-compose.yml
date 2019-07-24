@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  client:
+    image: koa-spa-stencil:latest
+    restart: always
+    build: .
+    ports:
+      - '3333:3333'
